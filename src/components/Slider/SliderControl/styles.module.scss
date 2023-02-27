@@ -1,0 +1,40 @@
+.sliderControlContainer{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 4%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 3rem;
+    cursor: pointer;
+    color: #ffffff;
+    z-index: 10;
+    
+    .sliderControlContainer.right {
+        right: 0;
+    }
+      
+    .sliderControlContainer.left {
+        left: 0;
+    }
+
+    .sliderControl {
+        transition-duration: 0.4s;
+        display: none;
+    } 
+      
+    &:hover,
+    &:active {
+        .sliderControl {
+            transition-duration: 0.4s;
+        display:block;
+        transform: scale(1.3);
+        }
+    }
+}
+.sliderControlContainer.right{
+    right: 0;
+}

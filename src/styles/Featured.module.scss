@@ -1,0 +1,120 @@
+.featuredDiv{
+    background-image: linear-gradient(to bottom, #6666661a,#141414), url('/Whindersson.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+
+    position: relative;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    .titleLogo{
+        position: relative;
+        top: 41.2%;
+        left: 3.1%;
+        width: 400px;
+    }
+    .buttons{
+        width: 80%;
+        position: relative;
+        top: 46%;
+        left: 3.1%;
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        font-size: 20px;
+        .playButton{
+            background-color: white;
+            color: black;
+            border: none;
+            padding: 12px 2.1rem 12px 2rem;
+            border-radius: 4px;
+            font-size: 20px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 17px;
+            font-weight: 500;
+            svg{
+                width: 35px;
+                height: 33px;
+            }
+        }
+        .moreInfoButton{
+            background-color: rgba(109, 109, 110, 0.7);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 20px;
+            padding: 12px 2.9rem 12px 2rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 17px;
+            font-weight: 500;
+            svg{
+                width: 35px;
+                height: 33px;
+            }
+        }
+    }
+}
+
+@media (max-width: 825px){
+    .featuredDiv{
+        .titleLogo{
+            width: 350px;
+            height: 141px;
+            aspect-ratio: auto 350/141;
+        }
+        .buttons{
+            height: 50px;
+            font-size: 18px;
+            .playButton{
+                svg{
+    
+                    width: 20px ;
+                    height: 20px ;
+                }
+            }
+            .moreInfoButton{
+                svg{
+        
+                    width: 20px ;
+                    height: 20px ;
+                }
+            }
+        } 
+    }
+}
+@media (max-width: 550px){
+    .featuredDiv{
+        .titleLogo{
+            width: 300px;
+            height: 121px;
+            aspect-ratio: auto 300/121;
+        }
+        .buttons{
+            height: 50px;
+            font-size: 18px;
+            .playButton{
+                svg{
+
+                    width: 20px ;
+                    height: 20px ;
+                }
+            }
+            .moreInfoButton{
+                svg{
+        
+                    width: 20px ;
+                    height: 20px ;
+                }
+            }
+        }
+    }
+}
