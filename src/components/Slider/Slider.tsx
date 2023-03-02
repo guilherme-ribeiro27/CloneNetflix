@@ -47,7 +47,7 @@ function Slider({movies,title}:any) {
  const renderSliderContent = () => {
    // const [ sliderHasMoved, itemsInRow, lowestVisibleIndex]  = [sliderHasMoved, itemsInRow, lowestVisibleIndex];
   const totalItems = movies.data.results.length;
-  console.log(movies.data.results.length)
+  
 
    
    // slider content made up of left, mid, and right portions to allow continous cycling
@@ -107,7 +107,7 @@ function Slider({movies,title}:any) {
 
 
    const sliderContents = [];
-   console.log(combinedIndex)
+   
    for (let index of combinedIndex) {
      sliderContents.push(
        <SliderItem

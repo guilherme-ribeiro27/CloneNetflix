@@ -34,7 +34,7 @@ export class Slider extends Component<any,any> {
 
   // alter number of items in row on window resize
   handleWindowResize = () => {
-    console.log("entrei na função");
+    
     if (window.innerWidth > 1440) {
       this.setState({ itemsInRow: 6 });
       //this.render()
@@ -42,7 +42,7 @@ export class Slider extends Component<any,any> {
       this.setState({ itemsInRow: 3 });
       //this.render()
     } else if (window.innerWidth < 1000) {
-      console.log("entrei nessa merda")
+      
       this.setState({ itemsinRow: 2 });
       //this.render()
     }

@@ -11,7 +11,6 @@ export interface Categories{
 //require('dotenv/config')
 export const moviesService = {
     getCategories: async() : Promise<any>=>{
-        console.log(process.env.NEXT_PUBLIC_API_KEY)
         return [
             {
                 id: 1,
