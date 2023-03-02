@@ -3,7 +3,7 @@ import React from 'react'
 import styles from './styles.module.scss'
 import { Movie } from 'typings'
 interface Props{
-    movie : Movie
+    movie : any
     width : number
 }
 function SliderItem ({movie, width} : Props) {
@@ -11,10 +11,10 @@ function SliderItem ({movie, width} : Props) {
     <div className={styles.sliderItem} style={{ width: `${width}%` }}>
         <img
         className={styles.sliderImg}
-        src={`${movie.thumbanailUrl}`}
+        src={`https://image.tmdb.org/t/p/w300${movie.backdrop_path}`}
         alt="title"
         />
-  </div>
+    </div>
   )
 }
 

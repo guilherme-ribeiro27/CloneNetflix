@@ -1,4 +1,6 @@
 export interface Movie {
-    id: number;
-    thumbanailUrl: string;
+    "backdrop_path": string,
+    "id": number,
+    "original_title": string,
+    "poster_path": string,
 }

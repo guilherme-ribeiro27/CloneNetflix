@@ -2,18 +2,19 @@
     background-image: linear-gradient(to bottom, #6666661a,#141414), url('/Whindersson.jpg');
     background-size: cover;
     background-position: center;
-    height: 1000px;
 
     position: relative;
-    z-index: -1;
+    z-index: 1;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
 
+    height: 100vh;
     .titleLogo{
         position: relative;
         top: 41.2%;
+        // top: 70%;
         left: 3.1%;
         width: 400px;
     }
@@ -26,6 +27,7 @@
         flex-direction: row;
         gap: 16px;
         font-size: 20px;
+        z-index: 1;
         .playButton{
             background-color: white;
             color: black;
@@ -39,9 +41,14 @@
             align-items: center;
             gap: 17px;
             font-weight: 500;
+            cursor: pointer;
             svg{
                 width: 35px;
                 height: 33px;
+            }
+            &:hover{
+                background-color: rgba(255, 255, 255, 0.75);
+
             }
         }
         .moreInfoButton{
@@ -56,9 +63,13 @@
             align-items: center;
             gap: 17px;
             font-weight: 500;
+            cursor: pointer;
             svg{
                 width: 35px;
                 height: 33px;
+            }
+            &:hover{
+                background-color: rgba(109, 109, 110, 0.4);
             }
         }
     }

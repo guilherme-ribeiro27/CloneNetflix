@@ -10,8 +10,8 @@ interface Props{
 }
 function SliderControl ({arrowDirection, onClick}: Props) {
   return (
-    <div className={ `${styles.sliderControlContainer} ${arrowDirection == "right" ? styles.right : styles.left}`}>
-        <div className={styles.sliderControl} onClick={onClick}>
+    <div className={ `${styles.sliderControlContainer} ${arrowDirection == "right" ? styles.right : styles.left}`} onClick={onClick}>
+        <div className={styles.sliderControl} >
             <Icon icon={arrowDirection === "right" ? chevronRight : chevronLeft} />
         </div>
     </div>
